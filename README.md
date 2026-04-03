@@ -2,8 +2,11 @@ This program takes a random forest and improves it with using with a gradient bo
 
 I them compared the results with stacking GradientBoostingClassifier() and RandomForestClassifier() without any hyperparameters. This is to see how they do as they are which acts like a control. Together they got an accuracy of 0.903.
 I then tested my knowledge on how the hyperparameters by using: 
+
 gbch = GradientBoostingClassifier(n_estimators=1000, max_depth=3, learning_rate=0.01, random_state=67)
+
 rfch = RandomForestClassifier(n_estimators=1000, random_state=67)
+
 #^ the h is for hyperparameter
 
 stacking = StackingClassifier(
