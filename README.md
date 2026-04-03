@@ -26,8 +26,11 @@ stacking = StackingClassifier(
 )
 
 stacking.fit(X_train, y_train)
+
 print(f"GBRF Accuracy = {stacking.score(X_test, y_test):.3f}")
+
         #^ gradient boosted random forest
+
 H = stacking.score(X_test, y_test)
 
 Here H prints to 0.952 which while the difference = 0.04839. Im very please with these results. But if you see an opportunity to imporove the code please let me know. I am hungry to learn more about this field so any input is great.
